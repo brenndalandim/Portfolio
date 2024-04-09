@@ -1,0 +1,439 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body{
+  color: white;
+  background: url("./assets/images/fundo.jpg") no-repeat;
+  background-size: cover;
+}
+
+/* Inicio header */
+header{
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #390052;
+  font-weight: 600;
+}
+
+header a{
+  color: white;
+}
+
+header ul{
+  height: inherit;
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+#botaocv{
+  width: 140px;
+  background-color: #c77dff;
+  border-bottom: 4px solid #8b1bbb ;
+  border-right: 4px solid #450e5d ;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+#botaocv:active{
+  background-color: #3d0057;
+  border: inset #c77dff;
+  color: white;
+}
+/* Final header */
+
+
+/* Inicio bloco com nome e resumo sobre mim */
+#tela{
+  height: calc(100vh - 80px);
+  display: flex;
+}
+
+#sobre{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#meuNome{
+  font-size: 50px;
+}
+
+#balao{
+  border: 5px solid #61008A;
+  background-color: #4b006b;
+  margin: 0 65px;
+  border-radius: 25px;
+  box-shadow: inset 0 0 30px 10px #2a013c;
+
+}
+
+#balao:after{
+  content: "";
+  position: absolute;
+  bottom: 256px;
+  left: 380px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #61008A;
+}
+
+#textoSobreMim p{
+  font-size: 17px;
+  text-align: center;
+  line-height: 25px;
+  padding: 15px;
+}
+
+#sobre img{
+  width: 350px;
+  border-radius: 450px;
+}
+/* Final bloco com nome e resumo sobre mim */
+
+/* Inicio bloco conteúdo */
+#caixaConteudo{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+#conteudo{
+  height: 95%;
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+}
+
+#conteudo::-webkit-scrollbar{
+  width: 0px;
+}
+
+
+#linksPaginas{
+  height: 5%;
+  padding-bottom: 10px;
+}
+
+#linksPaginas ul{
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  list-style: none;
+  font-weight: bold;
+}
+
+#linksPaginas ul a{
+  background-color: #c77dff;
+  border-bottom: 5px solid #520075;
+  border-right: 5px solid #3d0057;
+  border-radius: 20px;
+  padding: 10px 40px;
+  color: #671A92;
+}
+
+#linksPaginas ul a:active{
+  background-color: #3d0057;
+  border: inset #c77dff;
+  color: white;
+}
+
+/* Final bloco conteúdo */
+
+
+/* Inicio bloco Projetos */
+
+#projetos{
+  height: 100%;
+}
+
+#containerProjetos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+  padding-top: 30px;
+}
+
+#containerProjetos img, #containerProjetos a{
+  width: inherit;
+  border-radius: 10px;
+}
+
+.iconeSiteProjeto{
+  display: none;
+}
+
+
+.projeto p{
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.projeto{
+  width: 450px;
+}
+
+.projeto:hover{
+  background-color: rgba(199, 125, 255, 0.4);
+  padding: 5px;
+  border-radius: 10px;
+  transform: scale(1.1);
+  color: white;
+  font-weight: 500;
+  .iconeSiteProjeto{
+    display: inherit;
+    color: black;
+    position: fixed;
+    margin-left: 425px;
+    margin-top: 7px;
+  }
+}
+/* Final bloco Projetos */
+
+
+/* Inicio bloco Trilhas e Habilidades */
+
+#competencias_historico{
+  height: 100%;
+}
+
+#trilhaHabilidades{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#blocoCompHist{
+  display: flex;
+  height: 70%;
+}
+
+#container_competencias{
+  width: 50%;
+}
+
+#competencias{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#softSkills{
+  text-align: center;
+  font-size: 20px;
+}
+
+#softSkills p{
+  background-color: rgba(49,23,68,0.3);
+  border-left: 15px solid rgba(85,26,139,0.7);
+  border-right: 15px solid rgba(85,26,139,0.7);
+  box-shadow: inset 0 0 15px 3px #2d033f;
+  border-radius: 20px;
+  padding: 7px;
+  margin: 30px 90px;
+}
+
+#softSkills p:hover{
+  box-shadow: 0 0 5px 0.2px #919191;
+}
+
+#hardSkills{
+  display: flex;
+  justify-content: center;
+  max-height: 75px;
+}
+
+#hardSkills img{
+  width: 65px;
+  margin: 0 20px;
+}
+
+#historico{
+  width: 50%;
+}
+
+#textoHistorico{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+#blocoCertificados{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#certificados{
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* Final bloco Trilhas e Habilidades */
+
+
+/* Inicio bloco Contato */
+#caixaVazia{
+  height: 90px;
+}
+
+#contato{
+  height: 100%;
+}
+
+#containerContato{
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+
+#caixaRedesSociais i{
+  font-size: 60px;
+  margin: 30px;
+  color: #551A8B;
+}
+
+#caixaRedesSociais i:hover{
+  color: #6e22b4;
+}
+
+form{
+  width: 600px;
+  background-color: rgba(199, 125, 255, 0.4);
+  border: 5px solid rgba(199, 125, 255, 0.3);
+  border-radius: 20px;
+  padding: 10px 20px 10px 15px;
+  box-shadow: 0 0 30px 10px #350a52;
+}
+
+.inputFormulario{
+  width: 100%;
+  padding: 2px;
+  margin: 5px 0;
+  outline: none;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px #545454;
+}
+
+.inputFormulario:focus{
+  border: 1px solid #303030;
+}
+
+textarea{
+  resize: none;
+  height: 120px;
+}
+
+.botaoFormulario{
+  width: 100px;
+  padding: 3px;
+  margin-top: 4px;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: #d59eff;
+}
+
+input::-webkit-file-upload-button{
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: #d59eff;
+    margin: 2px;
+    margin-right: 5px;
+    padding: 3px 20px;
+}
+/* Final bloco Contato */
+
+
+/* Inicio Footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #390052;
+  color: white;
+  font-weight: 200;
+}
+
+/* Final Footer */
+
+
+.titulo{
+  font-size: 30px;
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+h2{
+  display: inline;
+  border: 3px solid #61008A;
+  background-color: #4b006b;
+  box-shadow: inset 0 0 30px 10px #2a013c;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.certificado{
+  display: flex;
+  background-color: rgba(199, 125, 255, 0.4);
+  border-radius: 5px;
+  padding: 8px;
+  height: 70px;
+}
+
+.certificado:hover{
+  background-color: rgba(199, 125, 255, 0.8);
+}
+
+.certificado a{
+  color: white;
+  opacity: 0.5;
+}
+
+.textoCertificado{
+  margin: 4px 0;
+}
+
+.tituloCertificado{
+  font-weight: 600;
+}
+
+.subtituloCertificado{
+  font-weight: 300;
+}
+
+.botaoCertificado:active{
+  color: black;
+}
+
+.certificado img{
+  width: 70px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.itemHistorico{
+  margin: 25px 0 25px 40px;
+}
